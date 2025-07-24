@@ -15,5 +15,10 @@ if scripts[currentPlaceId] then
         warn("Failed to load script for this game:", err)
     end
 else
-    warn("No script found for this game. PlaceId:", currentPlaceId)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Oreo Hub",
+Text = "You can join the discord and suggest a script for it, run the script again, go to Credits and copy discord",
+Duration = 5,
+})
+
 end
